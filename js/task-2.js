@@ -38,7 +38,7 @@ const ulElem = document.querySelector("ul");
 const galleryMarkup = images
   .map(
     (image) =>
-      `<li height='300px'><img src="${image.url}" alt="${image.alt}" width = '360px' height = '100%' ></li>`
+      `<li><img src="${image.url}" alt="${image.alt}" width = '100%' height = '100%'></li>`
   )
   .join(" ");
 
