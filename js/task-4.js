@@ -12,6 +12,7 @@
 // полів форми методом reset.
 
 const form = document.querySelector(".login-form");
+const inputs = document.querySelectorAll("input");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -28,4 +29,11 @@ form.addEventListener("submit", (e) => {
   };
   console.log(formData);
   form.reset();
+});
+
+inputs.forEach((input) => {
+  input.addEventListener("click", () => {
+    input.setAttribute("placeholder", "Type area");
+    input.classList.add("input-placeholder");
+  });
 });

@@ -36,7 +36,17 @@ const images = [
 const ulElem = document.querySelector("ul");
 
 const galleryMarkup = images
-  .map((image) => `<li><img src="${image.url}" alt="${image.alt}"></li>`)
+  .map(
+    (image) =>
+      `<li height='300px'><img src="${image.url}" alt="${image.alt}" width = '360px' height = '100%' ></li>`
+  )
   .join(" ");
 
 ulElem.insertAdjacentHTML("beforeend", galleryMarkup);
+
+ulElem.style.display = "flex";
+ulElem.style.flexWrap = "wrap";
+ulElem.style.flexDirection = "row";
+ulElem.style.maxWidth = "1128px";
+ulElem.style.gap = "48px 24px";
+ulElem.style.margin = "0 auto";

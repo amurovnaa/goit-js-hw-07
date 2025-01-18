@@ -4,11 +4,220 @@
 
 body {
   margin: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.item {
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 392px;
+  background-color: #f6f6fe;
+  margin-bottom: 24px;
+}
+
+.item h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.item ul {
+  padding: 0;
+}
+
+.item li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  height: 40px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  max-width: 360px;
+}
+.item li:last-child {
+  margin-bottom: 0;
+}
+
+h1,
+#name-output {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+#name-input {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  margin: 24px;
+}
+form label {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+form label:nth-child(2) {
+  margin-bottom: 16px;
+}
+form input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  margin-top: 8px;
+}
+form input:hover {
+  border: 1px solid #000;
+}
+.input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+form button {
+  border-radius: 8px;
+  max-width: 86px;
+  max-height: 40px;
+  background-color: #4e75ff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  padding: 8px 16px;
+  border: 0;
+}
+form button:hover {
+  background-color: #6c8cff;
+  cursor: pointer;
+}
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.widget p,
+.color {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.change-color {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #4e75ff;
+}
+.change-color:hover {
+  background-color: #6c8cff;
+  cursor: pointer;
+}
+#controls {
+  border-radius: 8px;
+  padding: 32px;
+  max-width: 486px;
+  max-height: 104px;
+  background-color: #f6f6fe;
+  margin-bottom: 16px;
+}
+#controls input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  width: 150px;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  text-align: center;
+}
+#controls button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+}
+[data-create] {
+  background-color: #4e75ff;
+}
+[data-create]:hover {
+  background-color: #6c8cff;
+  cursor: pointer;
+}
+[data-destroy] {
+  background-color: #ff4e4e;
+}
+[data-destroy]:hover {
+  background-color: #ff7070;
+  cursor: pointer;
 }
