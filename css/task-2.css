@@ -1,0 +1,7 @@
+.gallery img {
+  width: 360px;
+  height: 300px;
+}
+.gallery li {
+  list-style-type: none;
+}
