@@ -36,6 +36,7 @@ const destroyBtn = document.querySelector("[data-destroy]");
 const numberInput = document.querySelector("input");
 
 function createBoxes(amount) {
+  divBoxes.innerHTML = "";
   const allBoxes = [];
   let sizes = 30;
   for (let i = 0; i < amount; i++) {
